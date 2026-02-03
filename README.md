@@ -1,33 +1,27 @@
-# Anu Valentine Project ❤️
+❤️ Valentine Proposal Website ❤️
 
-This is a simple romantic Valentine website made using **HTML, CSS, and JavaScript**.
+Ye ek simple HTML project hai jo Anu ke liye banaya gaya hai.
 
-## 🌸 About
-This project is specially created for **Anu**.
-It contains:
-- 3 pages with beautiful background images
-- Romantic text messages
-- Valentine proposal with YES / NO interaction
-- Moving NO button 😄
-- Heart animation on YES
-- Background music (Mann Jogiya 🎶)
+📁 Required Files:
+1. anu.html  → Main HTML file
+2. bg1.jpg   → First page background image
+3. bg2.jpg   → Second page background image
+4. bg3.jpg   → Third page background image
+5. music.mp3 → Background music (Mann Jogiya)
 
-## 📂 Project Files
-- index.html
-- bg1.jpg (1st page background)
-- bg2.jpg (2nd page background)
-- bg3.jpg (3rd page background)
-- mann_jogiya.mp3 (background music)
+📌 How to Use:
+1. Sabhi files ko ek hi folder me rakhein.
+2. anu.html file par double click karein.
+3. Website browser me open ho jayegi.
+4. Music automatically play hoga.
+5. "NEXT" button se next page open hoga.
+6. YES button par click karne par hearts animation aur thank you page dikhega.
+7. NO button click karne par wo screen par move hota rahega 😄
 
-## ▶️ How to Run
-1. Download or clone this repository
-2. Open `index.html` in any browser
-3. Enjoy ❤️
+💖 Note:
+- Internet connection ki zarurat nahi hai.
+- Laptop aur mobile dono me kaam karta hai.
+- Best experience ke liye Google Chrome use karein.
 
-## 🛠️ Technologies Used
-- HTML
-- CSS
-- JavaScript
-
-## 💖 Made With Love By
-**Harsh**
+Made with ❤️ by Harsh
+For Anu 🌹
