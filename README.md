@@ -1,146 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>For Anu ❤️</title>
+# ❤️ Valentine Proposal Website ❤️
 
-<style>
-body{
-    margin:0;
-    padding:0;
-    overflow:hidden;
-    font-family: Arial, sans-serif;
-}
+This is a simple romantic HTML project created specially for **Anu** 💖.
 
-.page{
-    display:none;
-    height:100vh;
-    width:100%;
-    background-size:cover;
-    background-position:center;
-    padding:37px 310px;
-    box-sizing:border-box;
-}
+The website contains 3 pages with background images, background music, 
+interactive buttons, and heart animations.
 
-.active{
-    display:block;
-}
+---
 
-h1,p{
-    font-size:60px;
-    margin-bottom:20px;
-}
+## 📂 Files Included
 
-.red{color:red;}
-.green{color:green;}
-.purple{color:purple;}
-.blue{color:blue;}
-.pink{color:pink;}
+- `anu.html` → Main HTML file  
+- `bg1.jpg` → Background image for Page 1  
+- `bg2.jpg` → Background image for Page 2  
+- `bg3.jpg` → Background image for Page 3  
+- `Music.mp3` → Background music (plays automatically)
 
-.next{
-    position:absolute;
-    bottom:20px;
-    right:20px;
-    font-size:40px;
-    padding:10px 30px;
-}
+---
 
-.btn{
-    font-size:45px;
-    padding:15px 40px;
-    cursor:pointer;
-}
+## ▶️ How to Run
 
-#noBtn{
-    position:absolute;
-}
+1. Download or clone this repository  
+2. Keep all files in the same folder  
+3. Open `anu.html` in any web browser  
+4. Enjoy the experience ❤️
 
-.heart{
-    position:absolute;
-    bottom:-50px;
-    font-size:40px;
-    animation:float 5s linear infinite;
-}
+---
 
-@keyframes float{
-    to{
-        transform:translateY(-120vh);
-        opacity:0;
-    }
-}
-</style>
-</head>
+## ✨ Features
 
-<body>
+- Auto-play background music  
+- Beautiful background images  
+- Valentine proposal interaction  
+- Moving **NO** button 😄  
+- Heart animation on **YES** click  
+- Works offline (no internet needed)
 
-<!-- MUSIC -->
-<audio autoplay loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
+---
 
-<!-- PAGE 1 -->
-<div class="page active" id="p1" style="background-image:url('bg1.jpg')">
-    <h1 class="red">Hey anu 😗</h1>
+## 💻 Technologies Used
 
-    <p class="green">1. How are you anu</p>
-    <p class="green">2. I know ki tum kisi ke upar bharosha nahi hai, lekin mai chahta hu tum mere upar bharosha kro, mai tum se baat karta hu to muje khushi milti hai.</p>
-    <p class="green">3. Pata hai 1st time tumhe dekha tha to muje laga tha hum dusri baar mil rhe hai.</p>
-    <p class="green">4. Pata na yesa kyu lag raha, may be mile hoge kahi.</p>
-    <p class="green">5. Tum muje kamal ki lagti ho anu.</p>
-    <p class="green">6. Tum se baat karta hu to khushi milti hai anu.</p>
-    <p class="green">7. Tumhari aankhe pasand hai, tum se baat karna pasand hai, tum pasand ho.</p>
+- HTML  
+- CSS  
+- JavaScript  
 
-    <h1 class="red">ANU</h1>
+---
 
-    <button class="next" onclick="show(2)">NEXT ➡️</button>
-</div>
+## ❤️ Made With Love
 
-<!-- PAGE 2 -->
-<div class="page" id="p2" style="background-image:url('bg2.jpg')">
-    <h1 class="red">Hey Anu</h1>
-    <h1 class="purple">Will you be my Valentine 💜</h1>
-
-    <button class="btn blue" onclick="yes()">YES</button>
-    <button class="btn" id="noBtn" onclick="moveNo()">NO</button>
-</div>
-
-<!-- PAGE 3 -->
-<div class="page" id="p3" style="background-image:url('bg3.jpg')">
-    <h1 class="red" style="margin-top:30vh;">THANK YOU SO MUCH ANU ❤️</h1>
-    <p class="pink">You harsh</p>
-</div>
-
-<script>
-let texts = ["NO", "Are you sure?", "Ek baar soch lo"];
-let i = 0;
-
-function show(n){
-    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-    document.getElementById('p'+n).classList.add('active');
-}
-
-function moveNo(){
-    let b = document.getElementById("noBtn");
-    b.innerText = texts[i % texts.length];
-    i++;
-
-    b.style.left = Math.random()*(window.innerWidth-200)+"px";
-    b.style.top  = Math.random()*(window.innerHeight-100)+"px";
-}
-
-function yes(){
-    show(3);
-    for(let j=0;j<60;j++){
-        let h=document.createElement("div");
-        h.className="heart";
-        h.innerText="❤️";
-        h.style.left=Math.random()*100+"vw";
-        h.style.animationDuration=(3+Math.random()*3)+"s";
-        document.body.appendChild(h);
-        setTimeout(()=>h.remove(),6000);
-    }
-}
-</script>
-
-</body>
-</html>
+Made by **Harsh**  
+For **Anu** 🌹
